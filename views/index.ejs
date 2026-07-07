@@ -39,13 +39,13 @@
             <div class="collapse navbar-collapse navbar-content" id="navbarNav">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                    <a class="nav-link active" aria-current="page" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Our Portfolio</a>
+                    <a class="nav-link" href="#portfolio">Our Portfolio</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
+                    <a class="nav-link" href="#contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -64,33 +64,76 @@
             <h1 class="heading1">WHO ARE WE?</h1>
         </div>
         <div class="aboutText">
-            <p>UMN Documentation (UMN DOC) adalah organisasi multimedia dan broadcasting di bawah naungan Lab Broadcast UMN yang berperan penting dalam dokumentasi dan siaran langsung berbagai acara kampus. Dengan rekam jejak di acara besar seperti Wisuda UMN, Sidang Terbuka Senat / Kuliah Perdana, PEKANTARA, simulasi kebencanaan, konser-konser sampai beberapa seminar dan talkshow, UMN DOC menjadi saksi visual dari setiap momen penting di UMN.</p>
+            <p>UMN Documentation (UMN DOC) adalah organisasi multimedia dan broadcasting di bawah naungan Lab Broadcast UMN yang berperan penting dalam dokumentasi dan siaran langsung berbagai acara kampus. Dengan rekam jejak di acara besar seperti Wisuda UMN, Sidang Terbuka Senat: Kuliah Perdana, PEKANTARA, simulasi kebencanaan, konser-konser sampai beberapa seminar dan talkshow, UMN DOC menjadi saksi visual dari setiap momen penting di UMN.</p>
         </div>
     </section>
 
     <section id="skills" container-md>
         <h1 class="heading1 skillsHeading">OUR SKILLS</h1>
         <div class="row skillsRow">
-            <div class="col-md-3 skillCard">
+            <div class="col-lg-3 col-md-6 skillCard">
                 <img src="/content/icons/1-video.png" alt="Videography Icon" class="icon skillImage1">
                 <h3 class="skillTitle">Videography</h3>
-
+                <p class="skillDescription hidden">
+                     Merekam momen melalui video berkualitas untuk kebutuhan dokumentasi dan publikasi.
+                </p>
             </div>
-            <div class="col-md-3 skillCard">
+            <div class="col-lg-3 col-md-6 skillCard">
                 <img src="/content/icons/2-photo.png" alt="Photography Icon" class="icon skillImage2">
                 <h3 class="skillTitle">Photography</h3>
-                <p class="skillDescription">Capturing moments with precision and creativity.</p>
+                <p class="skillDescription hidden">
+                    Mendokumentasikan momen melalui foto berkualitas untuk kebutuhan dokumentasi dan publikasi.
+                </p>
             </div>
-            <div class="col-md-3 skillCard">
+            <div class="col-lg-3 col-md-6 skillCard">
                 <img src="/content/icons/3-broadcast.png" alt="Broadcast Icon" class="icon skillImage1">
                 <h3 class="skillTitle">Broadcast</h3>
-                <p class="skillDescription">Transforming raw footage into polished final products.</p>
+                <p class="skillDescription hidden">
+                    Mengelola proses broadcasting serta memastikan kelancaran teknis dan kualitas siaran.
+                </p>
             </div>
-            <div class="col-md-3 skillCard">
+            <div class="col-lg-3 col-md-6 skillCard">
                 <img src="/content/icons/4-edit.png" alt="Editing Icon" class="icon skillImage2">
                 <h3 class="skillTitle">Editing</h3>
-                <p class="skillDescription">Transforming raw footage into polished final products.</p>
+                <p class="skillDescription hidden">
+                    Mengolah foto dan video menjadi konten yang berkualitas dan siap dipublikasikan.
+                </p>
             </div>
+        </div>
+    </section>
+
+    <section id="portofolio">
+        <h1 class="heading1 portofolioHeading">OUR PORTFOLIO</h1>
+
+        <div class="container">
+            <div class="tab-wrap">
+                <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+                <label for="tab1">Wisuda XXX</label>
+
+                <input type="radio" id="tab2" name="tabGroup1" class="tab">
+                <label for="tab2">STS 2025</label>
+
+                <input type="radio" id="tab3" name="tabGroup1" class="tab">
+                <label for="tab3">Simul Gempa</label>
+
+                <input type="radio" id="tab4" name="tabGroup1" class="tab">
+                <label for="tab4">UFEST 2025</label>
+
+                <input type="radio" id="tab5" name="tabGroup1" class="tab">
+                <label for="tab5">NIKON Seminar</label>
+
+                <div class="tab-content">
+                    <div class="tab-thumbnail">
+                        <img src="/content/portofolio/wisuda.jpg" alt="Wisuda XXX" class="portofolioImage">
+                    </div>
+                    <div class="tab-content-text">
+                        <h2>Wisuda XXX</h2>
+                        <p>UMN DOC berhasil mendokumentasikan momen bersejarah Wisuda XXX dengan kualitas video dan foto yang luar biasa, memberikan kenangan tak terlupakan bagi para wisudawan.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
     </section>
     <!-- Bootstrap JS -->
