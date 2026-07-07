@@ -95,7 +95,7 @@ p{
 }
 
 .homeText{
-    color: #f2f2f2;
+    color: #f5f5f5;
 }
 
 /* about us */
@@ -191,7 +191,7 @@ p{
 
 .tab + label{
     padding: 15px;
-    background: #f2f2f2;
+    background: #f5f5f5;
     color: #333;
     cursor: pointer;
     user-select: none;
@@ -273,4 +273,57 @@ p{
 
 .tab__text{
     line-height: 1.7;
+}
+
+/* callback */
+#callback{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 12% 5%;
+}
+
+.callbackBackground{
+    position: relative;
+    isolation: isolate;
+    background-color: #1a1a1a;
+}
+
+.callbackBackground::before{
+    background-image: url('/content/contactbg.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.callbackWrap{
+    background-color: #facc15;
+    border-radius: 10px;
+    padding: 6rem 0;
+}
+
+.ctaHeading{
+    margin-bottom: 5%;
+}
+
+.ctaButton{
+    display: inline-block;
+    padding: 12px 32px;
+    background: #f5f5f5;
+    color: #1a1a1a;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.ctaButton:hover{
+    background: #d9d9d9;
+    color: #1a1a1a;
 }
