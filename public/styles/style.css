@@ -157,12 +157,17 @@ p{
 
 /* porto */
 #portofolio{
-    padding: 3rem;
+    padding: 5rem;
     background-color: #1a1a1a;
 }
 
 .portofolioHeading{
     color: #f5f5f5;
+}
+
+.portoWrapper{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 :root{
@@ -190,7 +195,9 @@ p{
 
 
 .tab + label{
-    padding: 15px;
+    flex: 0 0 170px;
+    min-width: 0;
+    padding: 15px 14px;
     background: #f5f5f5;
     color: #333;
     cursor: pointer;
@@ -199,6 +206,9 @@ p{
     border: 1px solid #ddd;
     border-bottom: none;
     transition: .3s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* tab styling */
@@ -229,11 +239,11 @@ p{
 .tab__content{
     display: none;
     width: 100%;
-    padding: 7rem 5rem;
+    padding: 5rem;
     border: 1px solid #ddd;
     border-radius: 0 var(--tab-wrap-border-radius) var(--tab-wrap-border-radius) var(--tab-wrap-border-radius);
     background: white;
-    order: 999;
+    order: 99;
 }
 
 /* showing active content */
@@ -258,22 +268,30 @@ p{
     display: flex;
 }
 
+#tab6:checked ~ .tab__content:nth-of-type(6){
+    display: flex;
+}
+
 .tab__thumbnail img{
     width: 100%;
     height: auto;
     display: block;
     border-radius: 8px;
+    object-fit: cover;
 }
 
 .tab__content__text{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 5% 0 5%;
 }
 
 .tab__text{
     line-height: 1.7;
+    margin-right: 5%;
 }
+
 
 /* callback */
 #callback{
@@ -332,7 +350,7 @@ p{
 
 /* contact us */
 .contactPage{
-    padding: 6rem;
+    padding: 3rem;
     background-color: #facc15;
     color: #1a1a1a;
     text-align: center;
@@ -343,6 +361,27 @@ p{
     margin: 0;
 }
 
+.contactHeading{
+    font-size:2rem;
+}
+
 .contactIcon{
-    scale: 0.4;
+    transform: scale(0.3);
+}
+
+.contactIcon:hover{
+    transform: scale(0.4);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* footer */
+#footer{
+    padding: 1rem;
+    background-color: #1a1a1a;
+    color: #facc15;
+    text-align: center;
+}
+
+.footerText{
+    font-size: 0.8rem;
 }

@@ -7,7 +7,14 @@ app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
     res.render('index');
-    typeWriter();
+});
+
+app.get('/partnership', (req, res) => {
+    res.render('wip');
+});
+
+app.get('/crewmember', (req, res) => {
+    res.render('wip');
 });
 
 app.listen(port, () => {

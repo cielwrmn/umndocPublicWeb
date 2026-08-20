@@ -105,7 +105,7 @@
     <section id="portofolio">
         <h1 class="heading1 portofolioHeading">OUR RECENT WORKS</h1>
 
-        <div class="container">
+        <div class="container-fluid portoWrapper">
             <div class="tab-wrap">
                 <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
                 <label for="tab1">Wisuda XXX</label>
@@ -122,11 +122,14 @@
                 <input type="radio" id="tab5" name="tabGroup1" class="tab">
                 <label for="tab5">NIKON Seminar</label>
 
+                <input type="radio" id="tab6" name="tabGroup1" class="tab">
+                <label for="tab6">Acara UMN</label>
+
                 <div class="tab__content">
-                    <div class="tab__thumbnail col-6">
-                        <img src="/content/portofolio/wisuda.jpg" alt="Wisuda XXX" class="portofolioImage">
+                    <div class="tab__thumbnail col-md-6">
+                        <img src="/content/porto/wisudaxxx.png" alt="Wisuda XXX" class="portofolioImage">
                     </div>
-                    <div class="tab__content__text col-6">
+                    <div class="tab__content__text col-md-6">
                         <h2 class="heading2">Wisuda XXX</h2>
                         <p class="tab__text">
                             UMN DOC berhasil mendokumentasikan momen bersejarah Wisuda XXX dengan kualitas video dan foto yang luar biasa, memberikan kenangan tak terlupakan bagi para wisudawan.
@@ -136,7 +139,7 @@
                 </div>
                 <div class="tab__content">
                     <div class="tab__thumbnail col-6">
-                        <img src="/content/portofolio/wisuda.jpg" alt="Wisuda XXX" class="portofolioImage">
+                        <img src="/content/porto/sts2025.jpg" alt="STS 2025" class="portofolioImage stsImage">
                     </div>
                     <div class="tab__content__text col-6">
                         <h2 class="heading2">Sidang Terbuka Senat 2025</h2>
@@ -149,7 +152,7 @@
 
                 <div class="tab__content">
                     <div class="tab__thumbnail col-6">
-                        <img src="/content/portofolio/wisuda.jpg" alt="Wisuda XXX" class="portofolioImage">
+                        <img src="/content/porto/simulgempa.jpg" alt="Simulasi Gempa" class="portofolioImage">
                     </div>
                     <div class="tab__content__text col-6">
                         <h2 class="heading2">Video Simulasi Gempa</h2>
@@ -162,7 +165,7 @@
 
                 <div class="tab__content">
                     <div class="tab__thumbnail col-6">
-                        <img src="/content/portofolio/wisuda.jpg" alt="Wisuda XXX" class="portofolioImage">
+                        <img src="/content/porto/ufest.jpg" alt="UFEST 2025" class="portofolioImage">
                     </div>
                     <div class="tab__content__text col-6">
                         <h2 class="heading2">UFEST 2025</h2>
@@ -175,12 +178,25 @@
 
                 <div class="tab__content">
                     <div class="tab__thumbnail col-6">
-                        <img src="/content/portofolio/wisuda.jpg" alt="Wisuda XXX" class="portofolioImage">
+                        <img src="/content/porto/nikon_im3.jpeg" alt="Seminar IM3 x Nikon 2025" class="portofolioImage">
                     </div>
                     <div class="tab__content__text col-6">
                         <h2 class="heading2">Seminar IM3 x Nikon</h2>
                         <p class="tab__text">
                             Seminar Photography IM3 x Nikon 2025 merupakan seminar fotografi hasil kolaborasi IM3 dan Nikon yang diselenggarakan di Universitas Multimedia Nusantara dan UMNDoc. Kegiatan ini menghadirkan sesi berbagi materi, workshop, serta praktik langsung mengenai teknik fotografi dari fotografer profesional Nikon. UMNDoc berperan dalam mendokumentasikan seluruh rangkaian acara melalui foto dan video untuk kebutuhan dokumentasi serta publikasi.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tab__content">
+                    <div class="tab__thumbnail col-6">
+                        <img src="/content/porto/pekantara.jpeg" alt="Pekantara 2025" class="portofolioImage">
+                    </div>
+                    <div class="tab__content__text col-6">
+                        <h2 class="heading2">Acara UMN</h2>
+                        <p class="tab__text">
+                            Berbagai Acara Universitas Multimedia Nusantara juga didukung oleh UMNDoc dalam kebutuhan dokumentasi, mulai dari Pekantara, Student Mobility, Career Building, Entrepreneur Week, hingga RIS Expo. Selain acara berskala besar, UMNDoc turut mendokumentasikan berbagai kegiatan akademik, institusional, dan kemahasiswaan melalui foto dan video untuk mendukung kebutuhan dokumentasi serta publikasi universitas.
 
                         </p>
                     </div>
@@ -203,28 +219,32 @@
                 </div>
             </div>
         </div>
-    </section
+    </section>
     
     <section id="contact">
         <div class="container-fluid contactPage">
             <h1 class="heading1 contactHeading">CONTACT US</h1>
-                <div class="row contactContent">
-                    <div class="col-md-6 contactIcon">
-                        <a href="https://www.instagram.com/umndocumentation" class="igIcon">
-                            <img src="/content/icons/5-ig.png" alt="Instagram Icon">
-                        </a>
-                    </div>
-                    <div class="col-md-6 contactIcon">
-                        <a href="https://line.me/ti/p/%40278uroum" class="igIcon">
-                            <img src="/content/icons/6-line.png" alt="Instagram Icon">
-                        </a>
-                    </div>
+            <div class="contactContent justify-content-center row">
+                <div class="contactIcon col-auto">
+                    <a href="https://www.instagram.com/umndocumentation" class="igIcon contactLogo">
+                        <img src="/content/icons/5-ig.png" alt="Instagram Icon">
+                    </a>
+                </div>
+                <div class="contactIcon col-auto">
+                    <a href="https://line.me/ti/p/%40278uroum" class="lineIcon contactLogo">
+                        <img src="/content/icons/6-line.png" alt="Instagram Icon">
+                    </a>
+                </div>
             </div>
-            
         </div>
     </section>
 
-
+    <section id="footer">
+        <div class="container-fluid footerWrap">
+            <p class="footerText text-center">© 2025 UMN Documentation. All Rights Reserved.</p>
+        </div>
+    </section>
+    
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- Javascript Animations -->
