@@ -14,7 +14,7 @@ app.get('/partnership', (req, res) => {
 });
 
 app.get('/crewmember', (req, res) => {
-    res.render('wip');
+    res.render('login');
 });
 
 app.listen(port, () => {
